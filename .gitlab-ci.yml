@@ -1,0 +1,51 @@
+stages:
+- test
+- build
+- deploy
+
+test:
+  image: node:alpine
+  stage: test
+
+  script:
+  - apk update && apk add zip
+  - echo "====== Install dependencies ======"
+  - npm install
+  - echo "====== Build react APP ======"
+  - npm run build
+  - echo "====== Test react APP ======"
+  - npm run test
+
+  artifacts:
+    name: panel-test
+    paths:
+    - test
+
+build:
+  image: node:alpine
+  stage: build
+
+  script:
+  - apk update && apk add zip
+  - echo "====== Install dependencies ======"
+  - npm install
+  - echo "====== Build react APP ======"
+  - npm run build
+
+  artifacts:
+    name: panel-build
+    paths:
+    - build
+
+deploy_s3_production:
+  image: "python:latest"  # We use python because there is a well-working AWS Sdk
+  stage: deploy
+  dependencies:
+  - build     # We want to specify dependencies in an explicit way, to avoid confusion if there are different build jobs
+  before_script:
+  - pip install awscli # Install the SDK
+  script:
+  - echo "====== Runnig deploy script ======="
+  - sh ./scripts/deploy.sh
+  only:
+  - master

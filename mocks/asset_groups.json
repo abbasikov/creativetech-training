@@ -1,0 +1,41 @@
+{
+  "site": {
+    "site_code": "CZ",
+    "site_name": "Cortez",
+    "asset_groups": [
+      {
+        "asset_group_name": "Dea1000"
+      },
+      {
+        "asset_group_name": "Pulleys For Overland Conveyor 2"
+      },
+      {
+        "asset_group_name": "Pah4100xpbbms"
+      },
+      {
+        "asset_group_name": "Lull944e"
+      },
+      {
+        "asset_group_name": "C&D Technologies Are130ac16f Ups"
+      },
+      {
+        "asset_group_name": "Cat992klbs"
+      },
+      {
+        "asset_group_name": "Cat988facs"
+      },
+      {
+        "asset_group_name": "Hitex5500frs"
+      },
+      {
+        "asset_group_name": "Liebpr-776ucs"
+      },
+      {
+        "asset_group_name": "Cat3025cucs"
+      },
+      {
+        "asset_group_name": "Cat795f"
+      }
+    ]
+  }
+}

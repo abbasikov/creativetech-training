@@ -1,0 +1,75 @@
+{
+  "asset_id": 5622,
+  "asset_label": "Cortez",
+  "instance_number": "CZ",
+  "hierarchy_level": 0,
+  "hierarchies": [
+    {
+      "id": 599,
+      "asset_label": "Cortez Mining",
+      "instance_number": "CZ1",
+      "hierarchy_level": 1,
+      "hierarchies": [
+        {
+          "id": 97275,
+          "asset_label": "Open Pit Mine",
+          "instance_number": "CZ1-1",
+          "hierarchy_level": 2,
+          "hierarchies": [
+            {
+              "id": 97274,
+              "asset_label": "Cortez Open Pit Mine",
+              "instance_number": "CZ1-11",
+              "hierarchy_level": 3,
+              "hierarchies": [
+                {
+                  "id": 97288,
+                  "asset_label": "Open Pit Mining Equipment",
+                  "instance_number": "CZ1-112",
+                  "hierarchy_level": 4,
+                  "hierarchies": [
+                    {
+                      "id": 5336,
+                      "asset_label": "Drilling Equipment",
+                      "instance_number": "CZ1-1121",
+                      "hierarchy_level": 5,
+                      "hierarchies": [{}]
+                    },
+                    {
+                      "id": 5353,
+                      "asset_label": "Loading Equipment",
+                      "instance_number": "CZ1-1122",
+                      "hierarchy_level": 5,
+                      "hierarchies": [{}]
+                    },
+                    {
+                      "id": 5323,
+                      "asset_label": "Hauling Equipment",
+                      "instance_number": "CZ1-1123",
+                      "hierarchy_level": 5,
+                      "hierarchies": [{}]
+                    },
+                    {
+                      "id": 5343,
+                      "asset_label": "Support Equipment",
+                      "instance_number": "CZ1-1124",
+                      "hierarchy_level": 5,
+                      "hierarchies": [{}]
+                    },
+                    {
+                      "id": 5354,
+                      "asset_label": "Mine Maintenance Equipment",
+                      "instance_number": "CZ1-1125",
+                      "hierarchy_level": 5,
+                      "hierarchies": [{}]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "asset_group": [
+    {
+      "request_asset_group": "Cat795f",
+      "asset_group_name": "Cat795facs",
+      "components": [
+        {
+          "component_name": "DT",
+          "subComponents": [
+            {
+              "subComponent_name": "ZZZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_asset_group": "Cat795f",
+      "asset_group_name": "Cat795fbrs",
+      "components": [
+        {
+          "component_name": "ENG",
+          "subComponents": [
+            {
+              "subComponent_name": "ACU"
+            },
+            {
+              "subComponent_name": "BCP"
+            },
+            {
+              "subComponent_name": "BP"
+            },
+            {
+              "subComponent_name": "BRK"
+            },
+            {
+              "subComponent_name": "COL"
+            },
+            {
+              "subComponent_name": "EBRP"
+            },
+            {
+              "subComponent_name": "ZZZ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "name": "cloudnostic-web",
+  "version": "0.1.0",
+  "private": true,
+  "url": "https://tinyurl.com/cloudnostic",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "node-less-chokidar": "^0.4.1",
+    "react": "^16.3.2",
+    "react-confirm-alert": "^2.0.5",
+    "react-day-picker": "^7.1.10",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "react-table": "^6.8.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "require-dot-file": "^0.4.0",
+    "run-sequence": "^2.2.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2"
+  },
+  "scripts": {
+    "start-js": "react-scripts start",
+    "start": "npm-run-all start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-js",
+    "test": "cross-env CI=true react-scripts test --env=jsdom --testEnvironment=node",
+    "test:coverage": "react-scripts test --env=jsdom --coverage",
+    "eject": "react-scripts eject",
+    "deploy": "sh scripts/deploy.sh && sh scripts/cache.sh",
+    "lint": "lint-staged",
+    "get-secrets-to-api-key": "node ./scripts/GetSecretsToAPI-KEY.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/containers/HomePage*.js",
+      "!src/**/index.js",
+      "!src/lib/*.*",
+      "!src/services/*.*",
+      "!src/config/*.*"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 90,
+        "statements": 90,
+        "branches": 90
+      }
+    },
+    "coverageReporters": [
+      "json",
+      "html",
+      "text-summary"
+    ]
+  },
+  "//": {
+    "coverageReporters": [
+      "html",
+      "text",
+      "text-summary"
+    ]
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.15.0",
+    "better-console": "^1.0.1",
+    "cross-env": "^5.2.0",
+    "dedupe": "^3.0.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-react-app": "^2.1.0",
+    "npm-run-all": "^4.1.5",
+    "gulp": "^3.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-chmod": "^2.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-clone": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-help": "^1.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-print": "^5.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-dedupe": "0.0.2",
+    "gulp-flatten": "^0.4.0",
+    "gulp-header": "^2.0.7",
+    "gulp-rtlcss": "^1.3.0",
+    "husky": "^1.0.0-rc.9",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.5",
+    "react-test-renderer": "^16.4.1",
+    "redux-mock-store": "^1.5.3",
+    "yamljs": "^0.3.0"
+  }
+}

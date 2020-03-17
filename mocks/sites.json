@@ -1,0 +1,34 @@
+{
+  "sites": [
+    {
+      "asset_id": 5622,
+      "asset_label": "Cortez",
+      "instance_number": "CZ"
+    },
+    {
+      "asset_id": 5580,
+      "asset_label": "Pueblo Viejo",
+      "instance_number": "PV"
+    },
+    {
+      "asset_id": 101852,
+      "asset_label": "Hemlo",
+      "instance_number": "HM"
+    },
+    {
+      "asset_id": 101857,
+      "asset_label": "Turquoise Ridge",
+      "instance_number": "TR"
+    },
+    {
+      "asset_id": 101858,
+      "asset_label": "Goldstrike",
+      "instance_number": "GS"
+    },
+    {
+      "asset_id": 101859,
+      "asset_label": "Golden Sunlight",
+      "instance_number": "MT"
+    }
+  ]
+}
