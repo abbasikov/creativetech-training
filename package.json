@@ -4,7 +4,7 @@
   "private": true,
   "url": "https://tinyurl.com/cloudnostic",
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "node-less-chokidar": "^0.4.1",
     "react": "^16.3.2",
     "react-confirm-alert": "^2.0.5",
